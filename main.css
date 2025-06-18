@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* Primary */
+
+--Purple-600: hsl(246, 80%, 60%);
+--Orange-300-work: hsl(15, 100%, 70%);
+--Blue-300-play: hsl(195, 74%, 62%);
+--Pink-400-study: hsl(348, 100%, 68%);
+--Green-400-exercise: hsl(145, 58%, 55%);
+--Purple-700-social: hsl(264, 64%, 52%);
+--Yellow-300-self-care: hsl(43, 84%, 65%);
+
+/* ### Neutral */
+
+--Navy-950: hsl(226, 43%, 10%);
+--Navy-900: hsl(235, 46%, 20%);
+--Purple-500: hsl(235, 45%, 61%);
+--Navy-200: hsl(236, 100%, 87%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Navy-950);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  display: flex;
+  gap: 30px;
+  height: auto;
+}
+
+.box-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+article {
+  color: var(--Navy-200);
+  border-radius: 20px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 230px;
+}
+
+.card-perfil {
+  width: 240px;
+  height: 490px;
+  background-color: var(--Navy-900);
+}
+
+.box-user {
+  padding: 30px;
+  padding-bottom: 70px;
+  border-radius: 20px;
+  background-color: var(--Purple-600);
+}
+
+.img-profile {
+  width: 90px;
+  height: 90px;
+  border: 2px solid var(--Navy-200);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-perfil {
+  margin-top: 50px;
+}
+
+.info-perfil .name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.box-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+}
+
+.box-filter p {
+  font-size: 20px;
+  color: var(--Purple-500);
+  cursor: pointer;
+}
+.box-filter p:hover {
+  color: var(--Navy-200);
+}
+
+.info {
+  border-radius: 20px;
+  padding: 30px;
+  /* height: 70%; */
+  background-color: var(--Navy-900);
+  z-index: 10;
+}
+
+.title-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.title-card p {
+  font-weight: 700;
+}
+
+.info-card .hrs {
+  font-size: 50px;
+}
+.info-card .last-week {
+  color: var(--Purple-500);
+}
+
+.card-work {
+  background-color: var(--Orange-300-work);
+}
+.card-play {
+  background-color: var(--Blue-300-play);
+}
+.card-study {
+  background-color: var(--Pink-400-study);
+}
+.card-exercise {
+  background-color: var(--Green-400-exercise);
+}
+.card-social {
+  background-color: var(--Purple-700-social);
+}
+.card-selfcare {
+  background-color: var(--Yellow-300-self-care);
+}
+
+.eyelash {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+.eyelash svg {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+p[data-timeframe] {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+p[data-timeframe].active {
+  color: var(--Navy-200); 
+  font-weight: bold;
+}
+
+.attribution { 
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 11px; 
+  text-align: center;
+  color: var(--Navy-200); 
+  z-index: 10;
+}
+.attribution a { 
+  color: var(--Green-400-exercise); 
+}
